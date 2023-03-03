@@ -20,8 +20,8 @@ body {
   --text-color-dark-mode: #ffffff;
 
   /* button dark light */
-  --img-url-mode-light-off: url(../images/light-off.svg) no-repeat center;
-  --img-url-mode-light-on: url(../images/light-on.svg) no-repeat center;
+  --img-url-light-off: url(../images/light-off.svg) no-repeat center;
+  --img-url-light-on: url(../images/light-on.svg) no-repeat center;
 
   /* border */
   --border-default: 1px solid #615b5b5a;
@@ -73,7 +73,7 @@ body {
 }
 
 .dark .container .btn-dark-light {
-  background: var(--img-url-mode-light-off);
+  background: var(--img-url-light-off);
   left: 0;
   top: 50%;
   right: initial;
@@ -159,7 +159,7 @@ main {
 .btn-dark-light {
   width: 32px;
   height: 34px;
-  background: var(--img-url-mode-light-on);
+  background: var(--img-url-light-on);
   border: 1px solid black;
   border-radius: 9999px;
   cursor: pointer;
