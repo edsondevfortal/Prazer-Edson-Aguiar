@@ -1,0 +1,226 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+:root {
+  /* colors default */
+  --text-color-light-mode: #000000;
+  --text-color-dark-mode: #ffffff;
+
+  /* button dark light */
+  --img-url-mode-light-off: url(../images/light-off.svg) no-repeat center;
+  --img-url-mode-light-on: url(../images/light-on.svg) no-repeat center;
+
+  /* border */
+  --border-default: 1px solid #615b5b5a;
+  --border-dark-mode: 1px solid #ffffff;
+
+  /* bg dark mode */
+  --bg-dark-mode: #f0f3d5;
+}
+
+/* DARK MODE */
+
+.dark {
+  /* background dark mode */
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(35, 106, 120, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(35, 106, 120, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(35, 106, 120, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#236a78",GradientType=1);
+
+  color: var(--text-color-dark-mode);
+}
+
+.dark .container-attributes ul li {
+  border: 1px solid #ffffff;
+  box-shadow: 0px 3px 3px -4px #ffffff;
+}
+
+.dark .container-attributes ul li:hover {
+  border-color: #0e0e0ea7;
+  background-color: var(--bg-dark-mode);
+  color: var(--text-color-light-mode);
+}
+
+.dark .container .section-btn {
+  border-color: var(--bg-dark-mode);
+  background-color: var(--bg-dark-mode);
+  cursor: pointer;
+}
+
+.dark .container .btn-dark-light {
+  background: var(--img-url-mode-light-off);
+  left: 0;
+  top: 50%;
+  right: initial;
+  border: 1px solid rgb(0, 0, 0);
+  height: 32px;
+  cursor: pointer;
+}
+
+.dark .container-icons ul a {
+  color: var(--text-color-dark-mode);
+  border: var(--border-dark-mode);
+}
+
+.dark .container-icons ul a:hover {
+  background-color: var(--bg-dark-mode);
+  color: var(--text-color-light-mode);
+}
+
+/* DEFAULT MODE */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(232, 232, 232, 1) 0%,
+    rgba(247, 247, 219, 0.40940126050420167) 0%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(232, 232, 232, 1) 0%,
+    rgba(247, 247, 219, 0.40940126050420167) 0%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(232, 232, 232, 1) 0%,
+    rgba(247, 247, 219, 0.40940126050420167) 0%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8e8e8",endColorstr="#f7f7db",GradientType=1);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+  height: 650px;
+}
+
+.container-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 3em;
+}
+
+.container-picture p {
+  font-weight: 500;
+}
+
+.container-picture img {
+  border-radius: 50%;
+  width: 10em;
+  box-shadow: 0px 1px 27px -13px #000;
+}
+
+.container-picture .section-btn {
+  border: var(--border-default);
+  padding: 17px 25px;
+  background-color: #000000bb;
+  cursor: pointer;
+
+  position: relative;
+  border-radius: 9999px;
+  transition: background 0.2s;
+}
+
+.btn-dark-light {
+  width: 32px;
+  height: 34px;
+  background: var(--img-url-mode-light-on);
+  border: 1px solid black;
+  border-radius: 9999px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 53%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.container-attributes {
+  margin-bottom: 3em;
+}
+
+.container-attributes ul {
+  display: flex;
+  flex-flow: column;
+  gap: 35px;
+}
+
+.container-attributes ul li {
+  padding: 0.8em 7em;
+  border-radius: 0.5em;
+  border: var(--border-default);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  box-shadow: 0px 3px 3px -4px #000;
+}
+
+.container-attributes ul li:hover {
+  border-color: 1px solid #3a38388f;
+  background-color: #d1d0d04d;
+}
+
+.container-icons {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-icons ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-icons ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 31px;
+  color: black;
+  box-shadow: 0px 2px 4px -4px #000;
+  border: var(--border-default);
+  transition: background 0.5s;
+}
+
+.container-icons ul a:hover {
+  border-color: 1px solid #3a38388f;
+  background-color: #d1d0d04d;
+}
