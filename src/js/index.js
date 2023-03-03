@@ -1,4 +1,4 @@
-//
+// get DOM elements
 const getSectionBtn = document.querySelector(".section-btn");
 const getTagMain = document.querySelector("main");
 

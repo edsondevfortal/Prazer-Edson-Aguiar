@@ -123,8 +123,7 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 420px;
-  height: 650px;
+  width: 100%;
 }
 
 .container-picture {
@@ -223,4 +222,42 @@ main {
 .container-icons ul a:hover {
   border-color: 1px solid #3a38388f;
   background-color: #d1d0d04d;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 280px) and (max-width: 319px) {
+  main {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  main {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 819px) {
+  main {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 911px) {
+  main {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1023px) {
+  main {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  main {
+    font-size: 13px;
+  }
 }
