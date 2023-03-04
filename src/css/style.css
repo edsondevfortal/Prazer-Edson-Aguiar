@@ -45,11 +45,6 @@ body {
     rgba(0, 0, 0, 1) 37%,
     rgba(35, 106, 120, 1) 100%
   );
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 37%,
-    rgba(35, 106, 120, 1) 100%
-  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#236a78",GradientType=1);
 
   color: var(--text-color-dark-mode);
@@ -240,19 +235,19 @@ main {
 
 @media (min-width: 768px) and (max-width: 819px) {
   main {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 820px) and (max-width: 911px) {
   main {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 912px) and (max-width: 1023px) {
   main {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
