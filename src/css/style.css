@@ -253,6 +253,8 @@ a {
   font-weight: bold;
 }
 
+/* section of the attributes */
+
 .attributes-section {
   display: flex;
   flex-direction: column;
@@ -273,6 +275,7 @@ a {
   width: 500px;
   height: 100vh;
   background-size: cover;
+
   /* background-image: url("../images/profile-photo.png"); */
 }
 
