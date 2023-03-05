@@ -219,6 +219,55 @@ main {
   background-color: #d1d0d04d;
 }
 
+/* section of the attributes */
+
+.attributes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+#market-experiences {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/profile-photo.png");
+}
+
+#certificates {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/profile-photo.png");
+}
+
+#soft-skills {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/profile-photo.png");
+}
+
+#hard-skills {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/profile-photo.png");
+}
+
+#about-me {
+  display: flex;
+  width: 500px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../images/profile-photo.png");
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 280px) and (max-width: 319px) {
