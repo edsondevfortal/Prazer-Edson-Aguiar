@@ -47,3 +47,10 @@ window.addEventListener("scroll", () => {
   scrollFunction();
   start_GoTopButton();
 });
+
+goTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
