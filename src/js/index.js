@@ -55,3 +55,22 @@ goUpButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// NAVIGATION | define function to get links and add events of click to navivation sections
+const addLinkClickListener = (link) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const targetElement = document.querySelector(link.getAttribute("href"));
+
+    if (targetElement) {
+      scrollToTarget(targetElement);
+    }
+  };
+
+  link.addEventListener("click", handleClick);
+};
+
+const hashLinks = document.querySelectorAll('a[href^="#"]');
+
+hashLinks.forEach(addLinkClickListener);
