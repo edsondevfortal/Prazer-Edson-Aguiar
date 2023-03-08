@@ -10,10 +10,10 @@ getSectionBtn.addEventListener("click", () => {
   }
 });
 
-// BUTTON | go to top site
-const goTopButton = document.getElementById("goTopButton");
+// BUTTON | go to inicial page
+const goUpButton = document.getElementById("goUpButton");
 
-const setType_GoToButton = new TypeIt("#goTopButton", {
+const setType_goUpButton = new TypeIt("#goUpButton", {
   strings: "Up",
   speed: 475,
   startDelay: 200,
@@ -21,34 +21,33 @@ const setType_GoToButton = new TypeIt("#goTopButton", {
   loop: true,
 });
 
-function start_GoTopButton() {
-  const shouldShowButton =
-    window.scrollY > 650 && goTopButton !== undefined && goTopButton !== null;
+function scrollY_ToShowButton() {
+  const isValidScroll = window.scrollY > 650;
 
-  if (shouldShowButton) {
-    setType_GoToButton.go();
+  if (isValidScroll) {
+    goUpButton.classList.add("goUpButton");
   } else {
-    // goTopButton.remove();
-    setType_GoToButton.reset();
+    goUpButton.classList.remove("goUpButton");
   }
 }
 
-function scrollFunction() {
-  const shouldShowButton = window.scrollY > 650;
+function start_GoUpButton() {
+  const isEnable = goUpButton.classList.contains("goUpButton");
+  const isValidScroll = window.scrollY > 650;
 
-  if (shouldShowButton) {
-    goTopButton.classList.add("goTopButton");
+  if (isEnable && isValidScroll) {
+    setType_goUpButton.go();
   } else {
-    goTopButton.classList.remove("goTopButton");
+    setType_goUpButton.reset();
   }
 }
 
 window.addEventListener("scroll", () => {
-  scrollFunction();
-  start_GoTopButton();
+  scrollY_ToShowButton();
+  start_goUpButton();
 });
 
-goTopButton.addEventListener("click", () => {
+goUpButton.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
