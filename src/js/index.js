@@ -62,7 +62,6 @@ const scrollToTarget = (targetElement) => {
   // calcule a posição do elemento alvo na página
   const topOffset = targetElement.getBoundingClientRect().top + window.scrollY;
 
-  // role a página suavemente até o elemento alvo
   window.scrollTo({
     top: topOffset,
     behavior: "smooth",
