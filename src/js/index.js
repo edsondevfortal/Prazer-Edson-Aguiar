@@ -11,6 +11,7 @@ getSectionBtn.addEventListener("click", () => {
 });
 
 // BUTTON | go to inicial page
+
 const goUpButton = document.getElementById("goUpButton");
 
 const setType_goUpButton = new TypeIt("#goUpButton", {
@@ -33,6 +34,7 @@ function scrollY_ToShowButton() {
 
 function start_GoUpButton() {
   const isEnable = goUpButton.classList.contains("goUpButton");
+
   const isValidScroll = window.scrollY > 650;
 
   if (isEnable && isValidScroll) {
