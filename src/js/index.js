@@ -32,12 +32,13 @@ function scrollY_ToShowButton() {
   }
 }
 
-function start_GoUpButton() {
-  const isEnable = goUpButton.classList.contains("goUpButton");
+function start_goUpButton() {
+  const goUpButtonn = document.getElementById("goUpButton");
+  const existButtonId = !!goUpButtonn; // !! convert to boolean value
 
   const isValidScroll = window.scrollY > 650;
 
-  if (isEnable && isValidScroll) {
+  if (existButtonId && isValidScroll) {
     setType_goUpButton.go();
   } else {
     setType_goUpButton.reset();
@@ -55,6 +56,18 @@ goUpButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// TARGET SCROLL | smooth scroll to a target element
+const scrollToTarget = (targetElement) => {
+  // calcule a posição do elemento alvo na página
+  const topOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+
+  // role a página suavemente até o elemento alvo
+  window.scrollTo({
+    top: topOffset,
+    behavior: "smooth",
+  });
+};
 
 // NAVIGATION | define function to get links and add events of click to navivation sections
 const addLinkClickListener = (link) => {
