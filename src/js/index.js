@@ -68,7 +68,7 @@ const scrollToTarget = (targetElement) => {
   });
 };
 
-// NAVIGATION | define function to get links and add events of click to navivation sections
+// NAVIGATION | function to get links and add events of click to navivation sections
 const addLinkClickListener = (link) => {
   const handleClick = (e) => {
     e.preventDefault();
@@ -86,3 +86,19 @@ const addLinkClickListener = (link) => {
 const hashLinks = document.querySelectorAll('a[href^="#"]');
 
 hashLinks.forEach(addLinkClickListener);
+
+const header = document.querySelector("header");
+console.log(header);
+
+window.addEventListener("scroll", function () {
+  const currentScrollPos = window.pageYOffset + 777;
+  const windowHeight = window.innerHeight;
+  const bodyHeight = document.body.clientHeight;
+  const bottomOffset = bodyHeight - windowHeight - currentScrollPos;
+  if (bottomOffset < header.clientHeight) {
+    header.classList.add("navbarPageTop");
+  } else {
+    header.classList.remove("navbarPageTop");
+  }
+  // this.alert(currentScrollPos);
+});
