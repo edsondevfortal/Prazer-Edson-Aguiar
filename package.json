@@ -1,0 +1,10 @@
+{
+  "name": "prazer-edson-aguiar",
+  "version": "1.0.0",
+  "description": "Prazer, Edson Aguiar. Seja bem vind(a)o ao meu portifólio pessoal.",
+  "main": "index.js",
+  "repository": "git@github.com:edsondevfortal/Prazer-Edson-Aguiar.git",
+  "author": "Edson Aguiar",
+  "license": "MIT",
+  "devDependencies": {}
+}
