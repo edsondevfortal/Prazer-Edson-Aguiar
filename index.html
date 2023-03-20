@@ -9,63 +9,101 @@
   </head>
   <body>
     <header>
-      <nav id="attribute-menu">
-        <ul>
-          <li>
-            <a href="#market-experiences"> Experiências </a>
-          </li>
-          <li>
-            <a href="#certificates"> Certificados </a>
-          </li>
-          <li>
-            <a href="#soft-skills"> Competências </a>
-          </li>
-          <li>
-            <a href="#hard-skills"> Técnicas </a>
-          </li>
-          <li>
-            <a href="#about-me"> Sobre mim </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-menu">
+        <nav class="nav-bar">
+          <a href="#home" class="not-this-01"> Início </a>
+          <a href="#about-me" class="not-this-02"> Sobre mim </a>
+          <a href="#market-experiences"> Experiências </a>
+          <a href="#certificates"> Certificados </a>
+          <a href="#soft-skills"> Competências </a>
+          <a href="#hard-skills"> Técnicas </a>
+          <a href="#contact"> Fale comigo </a>
+        </nav>
+        <div class="social">
+          <a href="https://github.com/edsondevfortal" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://linkedin.com/in/edsondev/" target="_blank">
+            <ion-icon id="logo-linkedin" name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container">
-        <div class="container-picture">
-          <span>
-            <img src="src/images/profile-photo.png" alt="Foto do perfil" />
-          </span>
-          <span class="section-btn">
-            <button class="btn-dark-light"></button>
-          </span>
-          <span>
-            <p>Edson Aguiar</p>
-          </span>
+        <div class="maintenance">
+          Este site está em desenvolvimento contínuo (recomendável visualizar em
+          Desktop)
         </div>
-        <div class="section-content"></div>
-        <div class="attributes-section">
-          <div id="market-experiences">Experiências de Mercado</div>
-          <div id="certificates">Certificados</div>
-          <div id="soft-skills">Competências</div>
-          <div id="hard-skills">Técnicas</div>
-          <div id="about-me">Sobre mim</div>
+        <div class="section-my-name">
+          <section id="my-name"></section>
+          <span>Bem-vinda(o)</span>
         </div>
-        <div class="container-icons">
-          <ul>
-            <li>
-              <a href="#">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-          </ul>
+
+        <button class="btn-dark-light" alt="Trocar para modo escuro"></button>
+
+        <div id="home">
+          <div class="parallax-home">
+            <div class="section-human">
+              <h2>human</h2>
+              <p class="text">
+                Pode levar o tempo que for, mas irei me esforçar para alcançar.
+              </p>
+            </div>
+            <div class="parallax-inner-img">
+              <figure>
+                <img src="./src/images/perfil-photo.png" alt="Foto" />
+              </figure>
+            </div>
+            <div class="section-code">
+              <h2>
+                <span class="symbol-left">&lt; </span>coder<span
+                  class="symbol-right"
+                  >&gt;</span
+                >
+              </h2>
+              <p class="text">
+                Dev. frontend (metido a UX design) que escreve código limpo,
+                organizado e resolvedor de problemas.
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- <div id="about-me">
+          <div class="parallax-about-me">
+            <div class="parallax-inner-text">
+              <h2 class="title is-splitted is-visible">
+                Desenvolvedor Frontend
+              </h2>
+              <p class="sub-title">
+                Sou um Programador em constante busca por conhecimento. Nascido
+                em FortalezaCe.
+              </p>
+              <section class="section-paragraph">
+                <p class="paragraph-01">
+                  Iniciei minha vida virtual com Tibia em meados 2009-10
+                  (importante ressaltar haha). Então passei a ficar horas e
+                  horas frente à uma tela e por influências parentais, ouvi
+                  falar sobre 'construção de sites'.
+                </p>
+                <p class="paragraph-01">
+                  Mais alguns anos se passaram iniciei minha vida acadêmica e em
+                  pararelo de estudar em casa me adentrei mais no mundo da
+                  programação web, na qual hoje, tenho grande simpatia,
+                  interesse e foco no seu aprendizado.
+                </p>
+                <p class="paragraph-02">
+                  Te falar.. se eu não estiver resolvendo problemas binários,
+                  você me encontrará cozinhando, brincando ou brigando com meu
+                  dog, lavando louça, organizando minha cama, ou concentrado na
+                  minha evolução pessoal.
+                </p>
+              </section>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <button id="goUpButton" title="Voltar para o topo"></button>
+      <button id="go-up-button" title="Voltar para o topo"></button>
     </main>
     <footer></footer>
 
@@ -79,7 +117,6 @@
     ></script>
     <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit/dist/typeit.min.js"></script>
-
     <script src="src/js/index.js"></script>
   </body>
 </html>
